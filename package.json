@@ -21,3 +21,4 @@
     "url": "https://github.com/freeCodeCamp/boilerplate-project-exercisetracker"
   },
   "license": "MIT",
+  "devDependencies": {
