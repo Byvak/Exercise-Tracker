@@ -18,3 +18,4 @@
     "mongoose": "^6.3.4"
   },
   "repository": {
+    "url": "https://github.com/freeCodeCamp/boilerplate-project-exercisetracker"
