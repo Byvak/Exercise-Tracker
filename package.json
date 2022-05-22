@@ -7,3 +7,4 @@
     "name": "Burnny Kibonge"
   },
   "scripts": {
+    "start": "node index.js"
