@@ -14,6 +14,7 @@ mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }, (er
   } else {
     console.log("Connexion etablie avec succes");
   }
+});
 
 
 
