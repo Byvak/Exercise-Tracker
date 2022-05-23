@@ -49,6 +49,7 @@ app.post('/api/users', (req, res) => {
         username: result.username, _id: result._id
       });
     } else {
+      res.json({
 
 app.listen(port, function () {
   console.log(`Your app is listening on port ${port}`);
