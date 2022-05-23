@@ -45,6 +45,7 @@ app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUsername(username, (result) => {
     if (result) {
+      res.json({
 
 app.listen(port, function () {
   console.log(`Your app is listening on port ${port}`);
