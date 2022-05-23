@@ -39,5 +39,6 @@ app.get('/api/users', (req, res) => {
       });
     }
   });
+});
 
 
