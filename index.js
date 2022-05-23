@@ -50,6 +50,7 @@ app.post('/api/users', (req, res) => {
       });
     } else {
       res.json({
+        erreur: result
 
 app.listen(port, function () {
   console.log(`Your app is listening on port ${port}`);
