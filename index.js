@@ -34,5 +34,6 @@ app.get('/api/users', (req, res) => {
     if (response) {
       res.json(response);
     } else {
+      res.json({
 
 
