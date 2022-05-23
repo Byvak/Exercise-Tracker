@@ -9,6 +9,7 @@ var user_dao = require('./models/user_dao');
 const { call } = require('body-parser');
 
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+  if (err) {
 
 
 
