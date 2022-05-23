@@ -13,6 +13,7 @@ mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }, (er
     console.log("Une erreur lors de la connection" + err);
   } else {
     console.log("Connexion etablie avec succes");
+  }
 
 
 
