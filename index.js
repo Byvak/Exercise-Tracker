@@ -11,6 +11,7 @@ const { call } = require('body-parser');
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
   if (err) {
     console.log("Une erreur lors de la connection" + err);
+  } else {
 
 
 
