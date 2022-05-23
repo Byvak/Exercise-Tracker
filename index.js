@@ -53,6 +53,7 @@ app.post('/api/users', (req, res) => {
         erreur: result
       });
     }
+  });
 
 app.listen(port, function () {
   console.log(`Your app is listening on port ${port}`);
