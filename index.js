@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 //API Endpoint
+app.get('/', (req, res) => {
 
 
 
