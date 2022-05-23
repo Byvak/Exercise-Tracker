@@ -43,3 +43,4 @@ app.get('/api/users', (req, res) => {
 
 
 app.listen(port, function () {
+  console.log(`Your app is listening on port ${port}`);
