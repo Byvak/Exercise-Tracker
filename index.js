@@ -36,5 +36,6 @@ app.get('/api/users', (req, res) => {
     } else {
       res.json({
         erreur: response
+      });
 
 
