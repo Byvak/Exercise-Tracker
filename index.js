@@ -49,6 +49,7 @@ app.post('/api/users', (req, res) => {
     }
   });
 });
+
     if (result) {
       res.json({
         username: result.username, _id: result._id
