@@ -18,5 +18,24 @@ p {
     max-width: 900px;
 }
 
+form {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #87D37C;
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 5px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: 16px;
+}
 
 
