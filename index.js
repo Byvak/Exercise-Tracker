@@ -51,6 +51,7 @@ app.post('/api/users', (req, res) => {
 });
 
 app.post('/api/users/:_id/exercises', (req, res) => {
+  var userId = req.params._id;
     if (result) {
       res.json({
         username: result.username, _id: result._id
