@@ -60,6 +60,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
   //First we check that description, duration and date are not empty
 
 
+  user_dao.saveUserExercise(userId, exercises_entity, (result) => {
     if (result) {
       res.json({
         username: result.username, _id: result._id
