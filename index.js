@@ -64,6 +64,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
     if (result) {
       res.json(
         result
+      );
     } else {
       res.json({
         erreur: result
