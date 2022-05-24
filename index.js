@@ -45,6 +45,7 @@ app.post('/api/users', (req, res) => {
     if (etat) {
       res.json({ _id: obj._id, username: obj.username });
     } else {
+      res.json({ Error: obj });
     if (result) {
       res.json({
         username: result.username, _id: result._id
