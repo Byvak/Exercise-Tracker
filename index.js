@@ -57,6 +57,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
   exercises_entity.duration = req.body.duration;
   exercises_entity.date = req.body.date;
 
+  //First we check that description, duration and date are not empty
     if (result) {
       res.json({
         username: result.username, _id: result._id
