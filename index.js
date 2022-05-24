@@ -50,6 +50,7 @@ app.post('/api/users', (req, res) => {
   });
 });
 
+app.post('/api/users/:_id/exercises', (req, res) => {
     if (result) {
       res.json({
         username: result.username, _id: result._id
