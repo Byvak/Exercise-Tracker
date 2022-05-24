@@ -62,6 +62,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
 
   user_dao.saveUserExercise(userId, exercises_entity, (result) => {
     if (result) {
+      res.json(
     } else {
       res.json({
         erreur: result
