@@ -30,7 +30,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/users', (req, res) => {
-  user_dao.getUsers((response) => {
     if (response) {
       res.json(response);
     } else {
