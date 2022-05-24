@@ -56,6 +56,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
   exercises_entity.description = req.body.description;
   exercises_entity.duration = req.body.duration;
   exercises_entity.date = req.body.date;
+
     if (result) {
       res.json({
         username: result.username, _id: result._id
