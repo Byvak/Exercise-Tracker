@@ -43,6 +43,7 @@ app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
     if (etat) {
+      res.json({ _id: obj._id, username: obj.username });
     if (result) {
       res.json({
         username: result.username, _id: result._id
