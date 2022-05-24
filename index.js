@@ -34,7 +34,6 @@ app.get('/api/users', (req, res) => {
     if (etat) {
       res.json(obj);
     } else {
-        erreur: response
       });
     }
   });
