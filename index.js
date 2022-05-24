@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/users', (req, res) => {
+  user_dao.getUsers((etat, obj) => {
     } else {
       res.json({
         erreur: response
