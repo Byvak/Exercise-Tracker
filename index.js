@@ -52,7 +52,6 @@ app.post('/api/users', (req, res) => {
 
 app.post('/api/users/:_id/exercises', (req, res) => {
   var userId = req.params._id;
-  var exercises_entity = require('./models/entities/exercises_entity').ExerciseEntity();
   exercises_entity.description = req.body.description;
   exercises_entity.duration = req.body.duration;
   exercises_entity.date = req.body.date;
