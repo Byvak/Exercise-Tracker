@@ -4,3 +4,4 @@ module.exports.ExerciseEntity = function ExerciseEntity() {
         duration: Number,
         date: Date
     };
+}
