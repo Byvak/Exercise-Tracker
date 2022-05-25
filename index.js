@@ -52,7 +52,6 @@ app.post('/api/users', (req, res) => {
 
 app.post('/api/users/:_id/exercises', (req, res) => {
   var userId = req.params._id;
-
   user_dao.saveUserExercise(userId, exercises_entity, (result) => {
     if (result) {
       res.json(
