@@ -52,7 +52,6 @@ app.post('/api/users', (req, res) => {
 
 app.post('/api/users/:_id/exercises', (req, res) => {
   var userId = req.params._id;
-
   //First we check that description, duration and date are not empty
 
 
