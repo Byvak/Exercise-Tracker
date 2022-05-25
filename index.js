@@ -54,6 +54,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
   var userId = req.params._id;
     } else {
       res.json({
+        Error: "Invalid date or number format"
       });
     }
   });
