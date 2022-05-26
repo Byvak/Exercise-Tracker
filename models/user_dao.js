@@ -1,4 +1,5 @@
 
+            callback(true, doc);
         }
     });
 }
