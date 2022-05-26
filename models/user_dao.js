@@ -5,6 +5,7 @@ module.exports.saveUser = function (username, callback) {
     });
     newUser.save();
     User.create({ username: username }, function (err, doc) {
+        if (err) {
             callback(true, doc);
         }
     });
