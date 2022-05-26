@@ -1,3 +1,4 @@
+const User = mongoose.model('User', UserEntity);
 
 module.exports.saveUser = function (username, callback) {
     let newUser = new User({
