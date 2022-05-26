@@ -7,3 +7,4 @@ module.exports.UserEntity = function UserEntity() {
         count: { type: Number, required: true, default: 0 },
         log: { type: Array }
     });
+}
