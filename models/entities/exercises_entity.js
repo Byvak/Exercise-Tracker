@@ -1,4 +1,3 @@
-        duration: Number,
         date: Date
     };
 }
