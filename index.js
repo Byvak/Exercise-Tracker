@@ -89,7 +89,6 @@ app.post('/api/users/:_id/exercises', (req, res) => {
         Error: "Invalid date or number format"
       });
     }
-  });
 });
 
 
