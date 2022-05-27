@@ -7,6 +7,7 @@ module.exports.saveUser = async function (username, callback) {
         let newUser = await new User({
             username: username
         }).save();
+        callback(true, newUser);
 }
 
 
