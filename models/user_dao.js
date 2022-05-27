@@ -22,4 +22,5 @@ module.exports.getUsers = async function (callback) {
         callback(true, doc);
     } catch (error) {
         callback(false, "Error : " + error.message)
+    }
 
