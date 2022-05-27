@@ -78,6 +78,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
             }
           });
         } else {
+          //User is not found
           res.json({
     } else {
       res.json({
