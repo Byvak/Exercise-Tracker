@@ -53,6 +53,7 @@ app.post('/api/users', (req, res) => {
 app.post('/api/users/:_id/exercises', (req, res) => {
   var userId = req.params._id;
   var exercises = {
+    description: req.body.description,
     } else {
       res.json({
         Error: "Invalid date or number format"
