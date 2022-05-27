@@ -10,6 +10,7 @@ module.exports.saveUser = async function (username, callback) {
         callback(true, newUser);
     } catch (error) {
         callback(false, "Error : " + error.message);
+    }
 }
 
 
