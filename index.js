@@ -93,6 +93,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
     res.json({
       Error: "Required fields should be filled"
     });
+  }
 });
 
 
