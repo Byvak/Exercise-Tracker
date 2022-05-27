@@ -76,6 +76,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
                 Error: savedExercise
               });
             }
+          });
     } else {
       res.json({
         Error: "Invalid date or number format"
