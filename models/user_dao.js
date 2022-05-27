@@ -35,3 +35,4 @@ module.exports.getUserById = async function (userId, callback) {
         }
     } catch (error) {
         callback(false, "Error : " + error.message);
+    }
