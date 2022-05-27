@@ -18,4 +18,5 @@ module.exports.getUsers = async function (callback) {
         var excludeFields = {
             __v: 0
         };
+        var doc = await User.find({}, excludeFields);
 
