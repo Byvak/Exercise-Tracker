@@ -17,4 +17,5 @@ module.exports.getUsers = async function (callback) {
     try {
         var excludeFields = {
             __v: 0
+        };
 
