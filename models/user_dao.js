@@ -25,3 +25,4 @@ module.exports.getUsers = async function (callback) {
     }
 }
 
+module.exports.getUserById = async function (userId, callback) {
