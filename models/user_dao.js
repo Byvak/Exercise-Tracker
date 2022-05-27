@@ -32,3 +32,4 @@ module.exports.getUserById = async function (userId, callback) {
             callback(false, user);
         } else {
             callback(true, user);
+        }
