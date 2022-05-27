@@ -15,4 +15,5 @@ module.exports.saveUser = async function (username, callback) {
 
 module.exports.getUsers = async function (callback) {
     try {
+        var excludeFields = {
 
