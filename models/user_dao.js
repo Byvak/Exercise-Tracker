@@ -21,4 +21,5 @@ module.exports.getUsers = async function (callback) {
         var doc = await User.find({}, excludeFields);
         callback(true, doc);
     } catch (error) {
+        callback(false, "Error : " + error.message)
 
