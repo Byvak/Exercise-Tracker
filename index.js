@@ -55,6 +55,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
   var exercises = {
     description: req.body.description,
     duration: Number(req.body.duration) ? req.body.duration : "error",
+    date: req.body.date != "" ? Date.parse(req.body.date) : new Date().toDateString()
     } else {
       res.json({
         Error: "Invalid date or number format"
