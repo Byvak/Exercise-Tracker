@@ -80,6 +80,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
         } else {
           //User is not found
           res.json({
+            Error: user
     } else {
       res.json({
         Error: "Invalid date or number format"
