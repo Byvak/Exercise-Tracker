@@ -66,6 +66,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
           //User is found, we first get the username and save the exercise
           exercises.username = user.username;
           exercise_dao.saveExercise(exercises, (etat, savedExercise) => {
+            if (etat) {
     } else {
       res.json({
         Error: "Invalid date or number format"
