@@ -6,6 +6,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const dbUri = process.env.MONGO_URI;
 var user_dao = require('./models/user_dao');
+var log_dao = require('./models/log_dao');
 
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
   if (err) {
