@@ -9,6 +9,7 @@ module.exports.saveUser = async function (username, callback) {
         }).save();
         callback(true, newUser);
     } catch (error) {
+        callback(false, "Error : " + error);
     }
 }
 
