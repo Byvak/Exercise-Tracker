@@ -10,3 +10,4 @@ module.exports.saveLog = async function (log, callback) {
             count: log.count,
             log: log.log
         }).save();
+        callback(true, usersLogs);
