@@ -8,3 +8,4 @@ module.exports.LogEntity = function LogEntity() {
         log: [{
             _id: false,
             description: String,
+            duration: Number,
