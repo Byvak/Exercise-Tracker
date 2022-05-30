@@ -7,3 +7,4 @@ module.exports.LogEntity = function LogEntity() {
         count: Number,
         log: [{
             _id: false,
+            description: String,
