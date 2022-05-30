@@ -7,3 +7,4 @@ module.exports.saveLog = async function (log, callback) {
     try {
         let usersLogs = await new Log({
             username: log.username,
+            count: log.count,
