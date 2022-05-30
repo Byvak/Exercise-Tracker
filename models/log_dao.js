@@ -13,3 +13,4 @@ module.exports.saveLog = async function (log, callback) {
         callback(true, usersLogs);
     } catch (error) {
         callback(false, "Error : " + error);
+    }
