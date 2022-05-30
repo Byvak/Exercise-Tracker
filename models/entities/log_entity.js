@@ -6,3 +6,4 @@ module.exports.LogEntity = function LogEntity() {
         username: String,
         count: Number,
         log: [{
+            _id: false,
