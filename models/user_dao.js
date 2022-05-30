@@ -29,6 +29,7 @@ module.exports.getUserById = async function (userId, callback) {
     try {
         let user = await User.findById(userId);
         if (!user) {
+            callback(false, "No user found");
         } else {
             callback(true, user);
         }
