@@ -10,3 +10,4 @@ module.exports.LogEntity = function LogEntity() {
             description: String,
             duration: Number,
             date: String
+        }]
