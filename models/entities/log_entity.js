@@ -11,3 +11,4 @@ module.exports.LogEntity = function LogEntity() {
             duration: Number,
             date: String
         }]
+    });
