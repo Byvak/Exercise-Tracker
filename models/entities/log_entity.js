@@ -12,3 +12,4 @@ module.exports.LogEntity = function LogEntity() {
             date: String
         }]
     });
+}
