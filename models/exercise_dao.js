@@ -4,3 +4,4 @@ const Exercise = mongoose.model('Exercise', ExerciseEntity);
 
 module.exports.saveExercise = async function (exercise, callback) {
     try {
+        let savedExercise = await new Exercise({
