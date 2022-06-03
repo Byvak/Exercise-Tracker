@@ -6,3 +6,4 @@ module.exports.saveExercise = async function (exercise, callback) {
     try {
         let savedExercise = await new Exercise({
             username: exercise.username,
+            description: exercise.description,
