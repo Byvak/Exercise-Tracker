@@ -7,3 +7,4 @@ module.exports.saveExercise = async function (exercise, callback) {
         let savedExercise = await new Exercise({
             username: exercise.username,
             description: exercise.description,
+            duration: exercise.duration,
