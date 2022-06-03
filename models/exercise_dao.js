@@ -13,3 +13,4 @@ module.exports.saveExercise = async function (exercise, callback) {
         callback(true, savedExercise);
     } catch (error) {
         callback(false, "Error : " + error);
+    }
