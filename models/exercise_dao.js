@@ -8,3 +8,4 @@ module.exports.saveExercise = async function (exercise, callback) {
             username: exercise.username,
             description: exercise.description,
             duration: exercise.duration,
+            date: exercise.date,
