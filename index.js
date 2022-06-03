@@ -9,6 +9,7 @@ var user_dao = require('./models/user_dao');
 var log_dao = require('./models/log_dao');
 var exercise_dao = require('./models/exercise_dao');
 
+
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
   if (err) {
     console.log("Une erreur lors de la connection" + err);
