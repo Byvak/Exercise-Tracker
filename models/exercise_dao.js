@@ -9,3 +9,4 @@ module.exports.saveExercise = async function (exercise, callback) {
             description: exercise.description,
             duration: exercise.duration,
             date: exercise.date,
+        }).save();
