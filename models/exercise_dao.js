@@ -16,3 +16,4 @@ module.exports.saveExercise = async function (exercise, callback) {
     }
 }
 
+module.exports.findExerciseByUsername = async function (username, callback) {
