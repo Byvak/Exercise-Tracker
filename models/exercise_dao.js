@@ -24,3 +24,4 @@ module.exports.findExerciseByUsername = async function (username, callback) {
         } else {
             callback(true, userExercises);
         }
+    } catch (error) {
