@@ -30,3 +30,4 @@ module.exports.findExerciseByUsername = async function (username, callback) {
 }
 
 module.exports.findExerciseByUsernameWithParams = async function (username, limitArray, fromDate, toDate, callback) {
+    try {
