@@ -32,3 +32,4 @@ module.exports.findExerciseByUsername = async function (username, callback) {
 module.exports.findExerciseByUsernameWithParams = async function (username, limitArray, fromDate, toDate, callback) {
     try {
         let userExercises = await Exercise.find({ username: username, date: { $gte: fromDate, $lte: toDate } }).select({ _id: false, __v: false, username: false }).limit(limitArray);
+        if (!userExercises) {
