@@ -19,3 +19,4 @@ module.exports.saveExercise = async function (exercise, callback) {
 module.exports.findExerciseByUsername = async function (username, callback) {
     try {
         let userExercises = await Exercise.find({ username: username }).select({ _id: false, __v: false, username: false });
+        if (!userExercises) {
