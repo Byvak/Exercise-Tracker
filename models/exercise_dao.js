@@ -37,3 +37,4 @@ module.exports.findExerciseByUsernameWithParams = async function (username, limi
         } else {
             callback(true, userExercises);
         }
+    } catch (error) {
