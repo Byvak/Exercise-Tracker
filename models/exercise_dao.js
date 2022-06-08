@@ -35,3 +35,4 @@ module.exports.findExerciseByUsernameWithParams = async function (username, limi
         if (!userExercises) {
             callback(false, "User's exercises not found");
         } else {
+        }
