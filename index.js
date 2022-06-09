@@ -41,6 +41,7 @@ app.get('/api/users', (req, res) => {
   });
 });
 
+
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
