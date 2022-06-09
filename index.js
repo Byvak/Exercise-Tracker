@@ -101,6 +101,7 @@ app.get('/api/users/:id/logs', (req, res) => {
         exercise_dao.findExerciseByUsernameWithParams(user.username, limitArray, fromDate, toDate, (etat, userExercisesFound) => {
           if (etat) {
             //We push all exercises inside log array
+            userExercisesFound.map((item) => {
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
