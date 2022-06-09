@@ -65,6 +65,7 @@ app.get('/api/users/:id/logs', (req, res) => {
   //First we find the user to get username
   user_dao.getUserById(userId, (etat, user) => {
     if (etat) {
+      //We check if we have params in query
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
