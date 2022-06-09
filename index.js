@@ -57,6 +57,7 @@ app.get('/api/users/:id/logs', (req, res) => {
   var userId = req.params.id;
   const { from, to, limit } = req.query;
 
+  var limitArray = Number(req.query.limit) || 0;
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
