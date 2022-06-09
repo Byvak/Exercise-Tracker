@@ -44,6 +44,7 @@ app.get('/api/users', (req, res) => {
 
 //Get user object with count property
 // app.get('api/users/:id/logs', (req, res) => {
+//   user_dao.getUserById((etat, obj) => {
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
