@@ -68,6 +68,7 @@ app.get('/api/users/:id/logs', (req, res) => {
       //We check if we have params in query
       if (Object.keys(req.query).length === 0) {
         //User is found, now we need to find all exercises related to that user according to params and to get exercises length
+        exercise_dao.findExerciseByUsername(user.username, (etat, userExercisesFound) => {
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
