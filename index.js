@@ -47,6 +47,7 @@ app.get('/api/users', (req, res) => {
 //   user_dao.getUserById((etat, obj) => {
 //     if (etat) {
 //       //User is found now we che
+//     } else {
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
