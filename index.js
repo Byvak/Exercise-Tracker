@@ -61,6 +61,7 @@ app.get('/api/users/:id/logs', (req, res) => {
   var fromDate = req.query.from || new Date(0);
   var toDate = req.query.to || new Date(Date.now());
   var logsArray = [];
+
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
