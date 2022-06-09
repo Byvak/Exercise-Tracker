@@ -82,6 +82,7 @@ app.get('/api/users/:id/logs', (req, res) => {
             //We send back data after saving logs
             log_dao.saveLog(logs, (etat, logsSaved) => {
               if (etat) {
+                res.json({
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
