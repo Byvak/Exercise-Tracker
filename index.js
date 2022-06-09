@@ -147,7 +147,6 @@ app.post('/api/users', (req, res) => {
   });
 });
 
-  var userId = req.params._id;
   var exercises = {
     description: req.body.description,
     duration: Number(req.body.duration) ? req.body.duration : "error",
