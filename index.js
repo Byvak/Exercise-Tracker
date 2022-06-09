@@ -77,6 +77,7 @@ app.get('/api/users/:id/logs', (req, res) => {
             var logs = {
               username: user.username,
               count: userExercisesFound.length,
+              log: logsArray
 app.post('/api/users', (req, res) => {
   var username = req.body.username;
   user_dao.saveUser(username, (etat, obj) => {
